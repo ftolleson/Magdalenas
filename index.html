@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+   <!--
+    * Ett exempel för elever med en sida som man kan man jobbar med  
+    * Boostrap 3 och man skapar en responsive design med "mobil first" metod.
+      lagra informationen in a MySQL databas.
+
+    *   - Användning av HTML5
+    *   - Användning av boostrap 3 (singel column layout / nested rows)
+        - Alternativ använda PhoneGap för att skapa en webbapp
+    *   
+    * @author Felix Tolleson <felix.tolleson@stromstad.se>
+
+    * @copyright 2017 Felix Tolleson
+    -->
+
+   
+   <!-- 
+         Vad har den här filen (2-start) extra gömfört med (1-final)
+         Alla div har fåt class 'row' och 'col'
+   -->
+   
+<header>
+   <meta charset="utf-8">
+   <!--Bootsrap 4 stuff here
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   
+   <link rel="stylesheet" type="text/css" href="styles/BS-lektion-1.css">
+</header>
+
+<body>
+   <div class="container">
+         
+      <!--Start of row 1 -->
+      <nav class="row">
+         <!--Start of first column-->
+         <div class="text-center col-xs-12 col-md-2">
+            <img src="assets/Baka_min_sota-liten.png" width="120px" alt="logo" />
+         <!--End of first column-->
+         </div>
+         
+         <!--Start of second column-->
+         <div class="text-center col-xs-12 col-md-2">
+            <p>Skistad 24</p>
+            <p>45741 Fjällbacka</p>
+         <!--End of second column-->
+         </div>
+      <!--End of row 1 -->
+      </nav>
+      
+      <main>
+         <!--Start of row 2-->
+         <div class="row">
+            <!--Start of first column-->
+            <div class="col-xs-12">
+               <p>Varje dag gör vi 100 muffins av en speciell smak som du hittar inte på menyn. Beställa den med namn och då blir det är gratis! Du måste agera snabbt eftersom när alla 100 är borta då är det klar för dagen. (Begränsat en muffins per kund.)</p>
+               <p><small>P.S. Vi lägger smaken namn på Twitter ca 30 minuter innan hemsidan, så <a href="#">follow us</a> för att få ett försprång.
+               </small></p>
+            <!--End of first column-->
+            </div>
+         <!--End of row 2-->
+         </div>
+         
+         <!--Start of row 3-->
+         <div class="row">
+            <!--Start of first column-->
+            <div class="col-xs-12>">
+               <h3>Dagens gratis muffin</h3>
+            <!--End of first column-->
+            </div>
+         <!--End of row 3-->
+         </div>
+         
+         <!--Start of nesting row 1-->
+         <div class="row">
+            <!--Start of first nesting column-->
+            <div class="col-xs-12">
+               <!--Start of row 4-->
+               <div class="row">
+                  <!--Start of first column-->
+                  <div class="col-xs-7">
+                     <img class="img-responsive" src="assets/dagens-muffins.jpg" alt="Triple Karamel Gratis Idag" />
+                  <!--End of first column-->
+                  </div>
+                  <!--Start of second column-->
+                  <div class="col-xs-5">
+                     <dl> <dt>Oktober 9</dt>
+                        <dd>Triple Karamel</dd>
+                     </dl>
+                     <h3> 36 kvar!</h3>
+                  <!--End of second column-->
+                  </div>
+               <!--End of row 4-->
+               </div>
+            <!--End of first nested column-->
+            </div>
+            <!--Start of second nesting column-->
+            <div class="col-xs-12">
+               <!--Start of row 5-->
+               <div class="row">
+                  <!--Start of first column-->
+                  <div class="col-xs-12">
+                     <h3>Varför gör ni det?</h3>
+                     <p>Vi bakar nyligen mer än 50 sorter av muffins en dag inklusive standarder som Röd Velvet, Morot och Djävulens Mat samt galna esoteriska (men läckra) smaker som Milkshake, Varm Choklad och Cannoli. Vi är ganska säker på att när du får ett smakprov på vad vi har att erbjuda dig kommer tillbaka för mer. Det är så enkelt!</p>
+                     <!--End of first column-->
+                  </div>
+               <!--End of row 5-->
+               </div>
+            <!--End of second nested column-->
+            </div>
+         <!--End of nesting row 1-->
+         </div>
+      
+         <!--Start of row 6-->
+         <div class="row">
+            <!--Start of first column-->
+            <div class="col-xs-12">
+               <h4> Några av våra inte så fria varor </h4> </div>
+            <!--End of first column-->
+         </div>
+         
+         <!--Start of Not Free Cupcakes row-->
+         <div class="row">
+            <!--Start of first column-->
+            <div class="col-xs-12">
+               <img class="img-responsive" src="assets/jordgubbs-muffin.jpg" alt="Jordgubbe Choklad" />
+               <h5> Jordgubbe Choklad </h5>
+               <p>Chokladkaka fylld och frostat med choklad fudge, toppad med jordgubbar glasyr och beströs med choklad stjärnor. </p>
+            </div>
+            <!--End of first column-->
+            <!--Start of second column-->
+            <div class="col-xs-12">
+               <img class="img-responsive" src="assets/morot-muffin.jpg" alt="Morot Cheesecake" />
+               <h5> Morot Cheesecake </h5>
+               <p>Morotskaka med cheesecake gräddas i toppad med vanilj cream cheese glasyr och choklad stjärna.</p>
+            </div>
+            <!--End of second column-->
+            <!--Start of third column-->
+            <div class="col-xs-12">
+               <img class="img-responsive" src="assets/jordgubbs-muffin.jpg" />
+               <h5> Jordnötssmör </h5>
+               <p>Vanilj kaka fylld med jordnötssmör glasyr, toppad med jordnötssmör och choklad grädde ost glasyr och jordnötssmör marker.</p>
+            </div>
+            <!--End of third column-->
+         </div>
+         <!--End of row 6-->
+      </main>
+      
+      <!--Start of Footer row-->
+      <footer class="row">
+         <!--Start of first column-->
+         <div class="col-xs-12">
+            <h4>Öppettider</h4>
+            <dl> <dt>Måndag</dt>
+               <dd>8:00-5:00</dd> <dt>Tisdag</dt>
+               <dd>8:00-5:00</dd> <dt>Onsdag</dt>
+               <dd>8:00-5:00</dd> <dt>Torsdag</dt>
+               <dd>8:00-5:00</dd> <dt>Fredag</dt>
+               <dd>8:00-6:00</dd> <dt>Lördag</dt>
+               <dd>9:00-12:00</dd> <dt>Söndag</dt>
+               <dd>Stängt</dd>
+            </dl>
+         </div>
+         <!--End of first column-->
+         <!--Start of second column-->
+         <div class="col-xs-12">
+            <h4>Adress</h4>
+            <p>Skistad 24 - 45741 Fjällbacka</p> <img class="img-responsive" src="assets/mapp.png">
+         </div>
+         <!--End of second column-->
+      </footer>
+      <!--End of Footer row-->
+      <!--End of container div-->
+   </div>
+</body>
+
+</html>
